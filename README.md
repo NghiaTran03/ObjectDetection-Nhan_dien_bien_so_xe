@@ -12,5 +12,23 @@ This project applies Object Detection techniques to detect and extract vehicle l
 - PyTorch
 - Label Studio
 
+**Project Structure**
+ObjectDetection-Nhan_dien_bien_so_xe/
+│
+├── dataset/
+├── run/
+├── runs/detect/
+├── results_image.png
+├── detect.py
+├── train.py
+└── README.md
+
+**How to Use**
+- Train the model using your custom dataset for 50 epochs on GPU 0:
+    results = model.train(data="my_data.yaml", epochs=50, device='0', batch = 2, imgsz = 416)  # change to your "my_data.yaml" path
+- Predict the result:
+  results = model.predict(r"E:\Project\Object_Detection_Biensoxe\a.png", imgsz=416)
+   you do not need to use "batch = 2" and "imgsz = 416" if your GPU strong enough. 
+
 **Example Results**
 <p align="center"> <img src="results_image.png" width="600"/> </p>
