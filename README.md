@@ -13,4 +13,4 @@ This project applies Object Detection techniques to detect and extract vehicle l
 - Label Studio
 
 **Example Results**
-<p align="center"> <img src="examples/example1.jpg" width="400"/> <img src="examples/example2.jpg" width="400"/> </p>
+<p align="center"> <img src="results_image.png" width="600"/> </p>
